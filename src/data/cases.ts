@@ -517,7 +517,64 @@ export const CASES: CaseModule[] = [
           },
         ],
       },
-
+      {
+        id: "locally-advanced-t4",
+        title: "Locally Advanced Disease (T4 Scenario + Neoadjuvant Pathway)",
+        content: [
+          "Board trap: Nipple retraction alone does NOT make it T4.",
+          "True T4 requires skin or chest wall involvement:",
+          "• T4a – chest wall invasion",
+          "• T4b – skin ulceration OR ipsilateral satellite skin nodules OR peau d’orange (edema)",
+          "• T4c – both T4a and T4b",
+          "• T4d – inflammatory breast cancer",
+          "",
+          "If confirmed T4N0Mx (treat as potentially Stage III until metastasis excluded):",
+          "1) COMPLETE metastatic workup first (M staging).",
+          "2) Neoadjuvant systemic therapy (standard for locally advanced disease).",
+          "3) Definitive surgery after response: usually Modified Radical Mastectomy (MRM).",
+          "4) Post-mastectomy radiation is expected for T4 disease.",
+          "5) ER+ / HER2−: endocrine therapy is mandatory backbone long-term.",
+          "",
+          "Neoadjuvant options in ER+ / HER2−:",
+          "• Chemo (anthracycline → taxane regimen) commonly used",
+          "• Neoadjuvant endocrine therapy can be considered in selected postmenopausal patients (e.g., Letrozole 2.5 mg PO daily) when chemo not preferred/fit",
+          "",
+          "Oral defense flow (board-safe):",
+          "A) Prove it’s truly T4 (not just retraction).",
+          "B) Stage M (CT chest/abdomen ± bone scan/PET depending on resources/symptoms).",
+          "C) Neoadjuvant → reassess response.",
+          "D) MRM + axilla → RT + endocrine therapy.",
+        ],
+        qna: [
+          {
+            id: "t4-q1",
+            question:
+              "Nipple retraction without skin ulceration/peau d’orange automatically makes breast cancer T4.",
+            choices: [
+              { id: "a", text: "True" },
+              { id: "b", text: "False" },
+              { id: "c", text: "Depends on tumor size only" },
+              { id: "d", text: "Depends on ER status" },
+            ],
+            answerId: "b",
+            explanation:
+              "Nipple retraction alone is not T4. T4 requires true skin involvement (ulceration/satellite nodules/peau d’orange) or chest wall invasion, or inflammatory carcinoma.",
+          },
+          {
+            id: "t4-q2",
+            question: "Confirmed T4N0Mx ER+ / HER2− breast cancer: best NEXT step is:",
+            choices: [
+              { id: "a", text: "Immediate mastectomy today" },
+              { id: "b", text: "Complete metastatic staging (M workup) then neoadjuvant systemic therapy" },
+              { id: "c", text: "Lumpectomy + SLNB first" },
+              { id: "d", text: "Endocrine therapy only, no staging needed" },
+            ],
+            answerId: "b",
+            explanation:
+              "Locally advanced disease requires M staging first, then neoadjuvant systemic therapy before definitive surgery.",
+          },
+        ],
+      },
       {
         id: "surgery",
         title: "Definitive Surgery (BCS vs Mastectomy) + Axilla",
